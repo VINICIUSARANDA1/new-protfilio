@@ -1,0 +1,122 @@
+:root {
+  --primary: #6C63FF;
+  --dark-bg: #0f0f14;
+  --dark-card: #1a1a22;
+  --light-bg: #f5f6fa;
+  --light-card: #ffffff;
+  --text-dark: #ffffff;
+  --text-light: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* DARK THEME */
+body.dark {
+  background: var(--dark-bg);
+  color: var(--text-dark);
+}
+
+body.dark .skill {
+  background: var(--dark-card);
+}
+
+/* LIGHT THEME */
+body.light {
+  background: var(--light-bg);
+  color: var(--text-light);
+}
+
+body.light .skill {
+  background: var(--light-card);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.theme-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 6rem 5%;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.8;
+}
+
+.btn-primary {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+/* SKILLS */
+.skills {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.skills-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill {
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinicius Aranda | Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <header>
+    <h1 class="logo">Vinicius Aranda</h1>
+
+    <button id="themeToggle" class="theme-btn">
+      Alternar Tema
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h2>Front-End Developer</h2>
+      <p>
+        Desenvolvedor focado em performance, experiência do usuário e soluções modernas.
+      </p>
+      <a href="#" class="btn-primary">Ver Projetos</a>
+    </section>
+
+    <section class="about">
+      <h3>Sobre Mim</h3>
+      <p>
+        Sou desenvolvedor com experiência em HTML, CSS, JavaScript e React.
+        Apaixonado por criar interfaces modernas, funcionais e otimizadas.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Google Tag Manager</div>
+        <div class="skill">Analytics</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vinicius Aranda — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light");
+      body.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>
